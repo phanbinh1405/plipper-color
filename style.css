@@ -75,7 +75,6 @@ main {
   font-weight: 700;
   font-size: 1rem;
   background-color: transparent;
-  outline: none;
   cursor: pointer;
   letter-spacing: 0.2rem;
   transition: all .5s;
@@ -86,6 +85,8 @@ main {
 }
 .container .btn:focus {
   box-shadow: none;
+  outline: none;
+  
 }
 @media screen and  (max-width: 576px ) {
   .container h2 {
