@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Plipper || Hex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <div class="nav-icon">Color Plipper</div>
+        <ul class="nav-menu">
+          <li class="nav-link"><a href="index.html">Simple</a></li>
+          <li class="nav-link"><a href="hex.html">Hex</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <h2>Background Color : <span class="color">#F1F5F8</span></h2>
+        <button class="btn">Change Color</button>
+      </div>
+    </main>
+    <script>
+      const colorHex = [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+      ];
+
+      const btnChangeColor = document.querySelector(".btn");
+      const colorName = document.querySelector(".color");
+
+      btnChangeColor.onclick = function () {
+        let hex = "#";
+        while (hex.length <= 6) {
+          hex += colorHex[randomNumber()];
+        }
+        document.body.style.backgroundColor = hex;
+        colorName.textContent = hex;
+      };
+
+      function randomNumber() {
+        return Math.floor(Math.random() * colorHex.length);
+      }
+    </script>
+  </body>
+</html>
