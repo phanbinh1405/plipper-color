@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
 * {
+  -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -75,7 +76,6 @@ main {
   font-size: 1rem;
   background-color: transparent;
   outline: none;
-  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
   letter-spacing: 0.2rem;
   transition: all .5s;
