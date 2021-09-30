@@ -84,6 +84,9 @@ main {
   background-color: #222;
   color: #fff;
 }
+.container .btn:focus {
+  box-shadow: none;
+}
 @media screen and  (max-width: 576px ) {
   .container h2 {
     font-size: 2rem;
